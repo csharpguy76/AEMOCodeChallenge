@@ -13,7 +13,12 @@ namespace AEMO.Web.Service.Controllers
     [ApiController]
     public class TextController : ControllerBase
     {
-
+        /// <summary>
+        /// This operation MatchString will find matching instances of a substring and it's index position
+        /// </summary>
+        /// <param name="text">string of text</param>
+        /// <param name="subText">string to match</param>
+        /// <returns>return JSON</returns>
         [HttpGet("MatchString")]
         public MatchTextResultModel MatchString([FromQuery] string text, [FromQuery] string subText)
         {

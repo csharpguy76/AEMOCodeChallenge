@@ -10,29 +10,28 @@
     <title>AEMO Code Challenge</title>
 </head>
 <body>
-<div ng-controller="aemoController">
-    <div class="container">
+<div class="container" ng-controller="aemoController">
         <div class="row">
             <h1>AEMO Code Challenge</h1>
         </div>
-        <div class="row">
-            <div class="col-1">Text</div>
-            <div class="col-1"><input type="text" placeholder="Enter text here." ng-model="text" /></div>
+        <div class="mb-1 row">
+            <div class="col-sm-2">Text</div>
+            <div class="col-sm"><input type="text" class="form-control" placeholder="Enter text here." ng-model="text" /></div>
+            <div class="col-sm text-danger">{{textErrorMsg}}</div>
         </div>
-        <div class="row">
-            <div class="col-1">Sub Text</div>
-            <div class="col-1"><input type="text" placeholder="Enter sub text here." ng-model="subText" /></div>
-
+        <div class="mb-1 row">
+            <div class="col-sm-2">Sub Text</div>
+            <div class="col-sm"><input type="text" class="form-control" placeholder="Enter sub text here." ng-model="subText" /></div>
+            <div class="col-sm text-danger">{{subTextErrorMsg}}</div>
         </div>
-        <div class="row">
-            <div class="col-1"><input type="button" class="btn-primary" value="Find" ng-click="find()" /></div>
+        <div class="mb-1 row">
+            <div class="col-sm-2"><input type="button" class="form-control btn-primary" value="Find" ng-click="find()" /></div>
         </div>
-        <div class="row"><label>Total: {{total}}</label></div>
-        <div class="row"><label>Index Positions: {{positions}}</label></div>
-        <div class="text-warning">
+        <div class="mb-1 row"><label>Total: {{total}}</label></div>
+        <div class="mb-1 row"><label>Index Positions: {{positions}}</label></div>
+        <div class="text-danger">
             {{errorMsg}}
         </div>
-    </div>
     
 </div>
 
