@@ -10,7 +10,7 @@
     <title>AEMO Code Challenge</title>
 </head>
 <body>
-<div class="container" ng-controller="aemoController">
+    <div class="container" ng-controller="aemoController">
         <div class="row">
             <h1>AEMO Code Challenge</h1>
         </div>
@@ -27,13 +27,16 @@
         <div class="mb-1 row">
             <div class="col-sm-2"><input type="button" class="form-control btn-primary" value="Find" ng-click="find()" /></div>
         </div>
+        <div class="mb-1 row">
+            <div class="col-sm-2"><input type="button" class="form-control btn-primary" value="Clear" ng-click="clear()" /></div>
+        </div>
         <div class="mb-1 row"><label>Total: {{total}}</label></div>
         <div class="mb-1 row"><label>Index Positions: {{positions}}</label></div>
         <div class="text-danger">
             {{errorMsg}}
         </div>
-    
-</div>
+
+    </div>
 
 
 </body>
